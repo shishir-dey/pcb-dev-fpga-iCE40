@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name W25Q128x)(type Legacy)(uri "C:/Users/Shishir Dey/OneDrive/Desktop/pcb-dev-fpga-iCE40/KiCad_Lib/w25q128jvxxm.lib")(options "")(descr ""))
+  (lib (name LY68L6400)(type Legacy)(uri "C:/Users/Shishir Dey/OneDrive/Desktop/pcb-dev-fpga-iCE40/KiCad_Lib/ly68l6400.lib")(options "")(descr ""))
+)

@@ -1,0 +1,259 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title "pcb-dev-fpga-iCE40"
+Date "2021-11-19"
+Rev "1.0"
+Comp ""
+Comment1 "Author: Shishir Dey"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J3
+U 1 1 619CABF3
+P 4400 3900
+F 0 "J3" H 4507 4767 50  0000 C CNN
+F 1 "USB-C Receptacle (USB2.0)" H 4507 4676 50  0000 C CNN
+F 2 "" H 4550 3900 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4550 3900 50  0001 C CNN
+	1    4400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:USBLC6-2P6 U6
+U 1 1 619CABF9
+P 6550 3850
+F 0 "U6" V 7150 3800 50  0000 L CNN
+F 1 "USBLC6-2P6" V 7250 3600 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-666" H 6550 3350 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 6750 4200 50  0001 C CNN
+	1    6550 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 619CABFF
+P 5300 3500
+F 0 "R12" V 5250 3350 50  0000 C CNN
+F 1 "5k1" V 5250 3700 50  0000 C CNN
+F 2 "" H 5300 3500 50  0001 C CNN
+F 3 "~" H 5300 3500 50  0001 C CNN
+	1    5300 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 619CAC05
+P 5300 3600
+F 0 "R13" V 5250 3450 50  0000 C CNN
+F 1 "5k1" V 5250 3800 50  0000 C CNN
+F 2 "" H 5300 3600 50  0001 C CNN
+F 3 "~" H 5300 3600 50  0001 C CNN
+	1    5300 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR034
+U 1 1 619CAC0B
+P 4400 4900
+F 0 "#PWR034" H 4400 4650 50  0001 C CNN
+F 1 "GND" H 4405 4727 50  0000 C CNN
+F 2 "" H 4400 4900 50  0001 C CNN
+F 3 "" H 4400 4900 50  0001 C CNN
+	1    4400 4900
+	1    0    0    -1  
+$EndComp
+Text Notes 5600 5350 0    50   ~ 0
+USB 2.0 INTERFACE
+$Comp
+L Device:Jumper_NO_Small JP7
+U 1 1 61AF0443
+P 5300 3100
+F 0 "JP7" V 5254 3148 50  0000 L CNN
+F 1 "Jumper" V 5345 3148 50  0000 L CNN
+F 2 "" H 5300 3100 50  0001 C CNN
+F 3 "~" H 5300 3100 50  0001 C CNN
+	1    5300 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR035
+U 1 1 61AF0B9E
+P 5300 2900
+F 0 "#PWR035" H 5300 2750 50  0001 C CNN
+F 1 "+5V" H 5315 3073 50  0000 C CNN
+F 2 "" H 5300 2900 50  0001 C CNN
+F 3 "" H 5300 2900 50  0001 C CNN
+	1    5300 2900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5000 4400
+NoConn ~ 5000 4500
+Wire Wire Line
+	4400 4800 4400 4850
+Connection ~ 4400 4850
+Wire Wire Line
+	4400 4850 4400 4900
+Wire Wire Line
+	4400 4850 4100 4850
+Wire Wire Line
+	4100 4850 4100 4800
+$Comp
+L power:GND #PWR037
+U 1 1 61AF1530
+P 6150 3850
+F 0 "#PWR037" H 6150 3600 50  0001 C CNN
+F 1 "GND" H 6155 3677 50  0000 C CNN
+F 2 "" H 6150 3850 50  0001 C CNN
+F 3 "" H 6150 3850 50  0001 C CNN
+	1    6150 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3500 5000 3500
+Wire Wire Line
+	5300 3200 5300 3300
+Wire Wire Line
+	5300 3300 5100 3300
+Text GLabel 5100 3150 1    50   Input ~ 0
+VBUS
+Wire Wire Line
+	5100 3150 5100 3300
+Connection ~ 5100 3300
+Wire Wire Line
+	5100 3300 5000 3300
+Wire Wire Line
+	5200 3600 5000 3600
+$Comp
+L power:GND #PWR036
+U 1 1 61AF39DD
+P 5600 3650
+F 0 "#PWR036" H 5600 3400 50  0001 C CNN
+F 1 "GND" H 5605 3477 50  0000 C CNN
+F 2 "" H 5600 3650 50  0001 C CNN
+F 3 "" H 5600 3650 50  0001 C CNN
+	1    5600 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3650 5600 3600
+Wire Wire Line
+	5600 3500 5400 3500
+Wire Wire Line
+	5400 3600 5600 3600
+Connection ~ 5600 3600
+Wire Wire Line
+	5600 3600 5600 3500
+Wire Wire Line
+	5000 4000 5200 4000
+Wire Wire Line
+	5800 4000 5800 4350
+Wire Wire Line
+	5800 4350 6450 4350
+Wire Wire Line
+	6450 4350 6450 4250
+Wire Wire Line
+	5000 3900 5200 3900
+Wire Wire Line
+	5800 3900 5800 3350
+Wire Wire Line
+	5800 3350 6450 3350
+Wire Wire Line
+	6450 3350 6450 3450
+Wire Wire Line
+	5000 3800 5200 3800
+Wire Wire Line
+	5200 3800 5200 3900
+Connection ~ 5200 3900
+Wire Wire Line
+	5200 3900 5800 3900
+Wire Wire Line
+	5000 4100 5200 4100
+Wire Wire Line
+	5200 4100 5200 4000
+Connection ~ 5200 4000
+Wire Wire Line
+	5200 4000 5800 4000
+Text GLabel 7000 3650 1    50   Input ~ 0
+VBUS
+Wire Wire Line
+	7000 3650 7000 3850
+Wire Wire Line
+	7000 3850 6950 3850
+$Comp
+L Device:R_Small R15
+U 1 1 61AF5C41
+P 7500 3750
+F 0 "R15" V 7304 3750 50  0000 C CNN
+F 1 "22e" V 7395 3750 50  0000 C CNN
+F 2 "" H 7500 3750 50  0001 C CNN
+F 3 "~" H 7500 3750 50  0001 C CNN
+	1    7500 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R16
+U 1 1 61AF61D5
+P 7500 4050
+F 0 "R16" V 7304 4050 50  0000 C CNN
+F 1 "22e" V 7395 4050 50  0000 C CNN
+F 2 "" H 7500 4050 50  0001 C CNN
+F 3 "~" H 7500 4050 50  0001 C CNN
+	1    7500 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 3450 6650 3350
+Wire Wire Line
+	6650 3350 7300 3350
+Wire Wire Line
+	7300 3350 7300 3750
+Wire Wire Line
+	7300 3750 7400 3750
+Wire Wire Line
+	6650 4250 6650 4350
+Wire Wire Line
+	7300 4350 7300 4050
+Wire Wire Line
+	7300 4050 7400 4050
+Text GLabel 7600 3750 2    50   Input ~ 0
+USB_N
+Text GLabel 7600 4050 2    50   Input ~ 0
+USB_P
+$Comp
+L Device:R_Small R14
+U 1 1 61AF79ED
+P 7200 4150
+F 0 "R14" H 7050 4200 50  0000 L CNN
+F 1 "1k5" H 7000 4100 50  0000 L CNN
+F 2 "" H 7200 4150 50  0001 C CNN
+F 3 "~" H 7200 4150 50  0001 C CNN
+	1    7200 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 4000 1    50   Input ~ 0
+USB_DET
+Wire Wire Line
+	6650 4350 7200 4350
+Wire Wire Line
+	7200 4000 7200 4050
+Wire Wire Line
+	7200 4250 7200 4350
+Connection ~ 7200 4350
+Wire Wire Line
+	7200 4350 7300 4350
+Text GLabel 5500 2950 1    50   Input ~ 0
+VIN
+Wire Wire Line
+	5300 3000 5500 3000
+Wire Wire Line
+	5300 3000 5300 2900
+Connection ~ 5300 3000
+Wire Wire Line
+	5500 2950 5500 3000
+$EndSCHEMATC

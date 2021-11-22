@@ -1,0 +1,272 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title "pcb-dev-fpga-iCE40"
+Date "2021-11-19"
+Rev "1.0"
+Comp ""
+Comment1 "Author: Shishir Dey"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:TLV73312PDBV U?
+U 1 1 619D0C7E
+P 7050 3900
+AR Path="/619D0C7E" Ref="U?"  Part="1" 
+AR Path="/619C4170/619D0C7E" Ref="U5"  Part="1" 
+F 0 "U5" H 7050 4242 50  0000 C CNN
+F 1 "TLV73312PDBV" H 7050 4151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7050 4225 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv733p.pdf" H 7050 3900 50  0001 C CNN
+	1    7050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:TLV75533PDRV U?
+U 1 1 619D0C84
+P 4850 3900
+AR Path="/619D0C84" Ref="U?"  Part="1" 
+AR Path="/619C4170/619D0C84" Ref="U4"  Part="1" 
+F 0 "U4" H 4850 4242 50  0000 C CNN
+F 1 "TLV75533PDRV" H 4850 4151 50  0000 C CNN
+F 2 "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm" H 4850 4225 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv755p.pdf" H 4850 3950 50  0001 C CNN
+	1    4850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 619D0C8A
+P 4100 3700
+AR Path="/619D0C8A" Ref="R?"  Part="1" 
+AR Path="/619C4170/619D0C8A" Ref="R11"  Part="1" 
+F 0 "R11" H 4041 3654 50  0000 R CNN
+F 1 "10k" H 4041 3745 50  0000 R CNN
+F 2 "" H 4100 3700 50  0001 C CNN
+F 3 "~" H 4100 3700 50  0001 C CNN
+	1    4100 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 619D0C90
+P 4100 4100
+AR Path="/619D0C90" Ref="C?"  Part="1" 
+AR Path="/619C4170/619D0C90" Ref="C15"  Part="1" 
+F 0 "C15" H 4192 4146 50  0000 L CNN
+F 1 "1u" H 4192 4055 50  0000 L CNN
+F 2 "" H 4100 4100 50  0001 C CNN
+F 3 "~" H 4100 4100 50  0001 C CNN
+	1    4100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 619D0C96
+P 4350 4100
+AR Path="/619D0C96" Ref="C?"  Part="1" 
+AR Path="/619C4170/619D0C96" Ref="C16"  Part="1" 
+F 0 "C16" H 4442 4146 50  0000 L CNN
+F 1 "4u7" H 4442 4055 50  0000 L CNN
+F 2 "" H 4350 4100 50  0001 C CNN
+F 3 "~" H 4350 4100 50  0001 C CNN
+	1    4350 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 619D0C9C
+P 5250 4000
+AR Path="/619D0C9C" Ref="C?"  Part="1" 
+AR Path="/619C4170/619D0C9C" Ref="C17"  Part="1" 
+F 0 "C17" H 5342 4046 50  0000 L CNN
+F 1 "4u7" H 5342 3955 50  0000 L CNN
+F 2 "" H 5250 4000 50  0001 C CNN
+F 3 "~" H 5250 4000 50  0001 C CNN
+	1    5250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 619D0CA2
+P 6550 4000
+AR Path="/619D0CA2" Ref="C?"  Part="1" 
+AR Path="/619C4170/619D0CA2" Ref="C18"  Part="1" 
+F 0 "C18" H 6642 4046 50  0000 L CNN
+F 1 "4u7" H 6642 3955 50  0000 L CNN
+F 2 "" H 6550 4000 50  0001 C CNN
+F 3 "~" H 6550 4000 50  0001 C CNN
+	1    6550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 619D0CA8
+P 7550 4000
+AR Path="/619D0CA8" Ref="C?"  Part="1" 
+AR Path="/619C4170/619D0CA8" Ref="C19"  Part="1" 
+F 0 "C19" H 7642 4046 50  0000 L CNN
+F 1 "4u7" H 7642 3955 50  0000 L CNN
+F 2 "" H 7550 4000 50  0001 C CNN
+F 3 "~" H 7550 4000 50  0001 C CNN
+	1    7550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619D0CAE
+P 7050 4300
+AR Path="/619D0CAE" Ref="#PWR?"  Part="1" 
+AR Path="/619C4170/619D0CAE" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 7050 4050 50  0001 C CNN
+F 1 "GND" H 7055 4127 50  0000 C CNN
+F 2 "" H 7050 4300 50  0001 C CNN
+F 3 "" H 7050 4300 50  0001 C CNN
+	1    7050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 619D0CB4
+P 6550 3700
+AR Path="/619D0CB4" Ref="#PWR?"  Part="1" 
+AR Path="/619C4170/619D0CB4" Ref="#PWR031"  Part="1" 
+F 0 "#PWR031" H 6550 3550 50  0001 C CNN
+F 1 "+5V" H 6565 3873 50  0000 C CNN
+F 2 "" H 6550 3700 50  0001 C CNN
+F 3 "" H 6550 3700 50  0001 C CNN
+	1    6550 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3700 6550 3800
+Wire Wire Line
+	6550 3900 6750 3900
+Connection ~ 6550 3900
+Wire Wire Line
+	6750 3800 6550 3800
+Connection ~ 6550 3800
+Wire Wire Line
+	6550 3800 6550 3900
+Wire Wire Line
+	6550 4100 6550 4300
+Wire Wire Line
+	6550 4300 7050 4300
+Wire Wire Line
+	7050 4200 7050 4300
+Connection ~ 7050 4300
+Wire Wire Line
+	7050 4300 7550 4300
+Wire Wire Line
+	7550 4300 7550 4100
+Wire Wire Line
+	7550 3900 7550 3800
+Wire Wire Line
+	7550 3800 7350 3800
+$Comp
+L power:+1V2 #PWR?
+U 1 1 619D0CC8
+P 7550 3700
+AR Path="/619D0CC8" Ref="#PWR?"  Part="1" 
+AR Path="/619C4170/619D0CC8" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 7550 3550 50  0001 C CNN
+F 1 "+1V2" H 7565 3873 50  0000 C CNN
+F 2 "" H 7550 3700 50  0001 C CNN
+F 3 "" H 7550 3700 50  0001 C CNN
+	1    7550 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3700 7550 3800
+Connection ~ 7550 3800
+$Comp
+L power:GND #PWR?
+U 1 1 619D0CD0
+P 4850 4300
+AR Path="/619D0CD0" Ref="#PWR?"  Part="1" 
+AR Path="/619C4170/619D0CD0" Ref="#PWR029"  Part="1" 
+F 0 "#PWR029" H 4850 4050 50  0001 C CNN
+F 1 "GND" H 4855 4127 50  0000 C CNN
+F 2 "" H 4850 4300 50  0001 C CNN
+F 3 "" H 4850 4300 50  0001 C CNN
+	1    4850 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4100 5250 4300
+Wire Wire Line
+	5250 4300 4850 4300
+Wire Wire Line
+	4850 4300 4850 4200
+Connection ~ 4850 4300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 619D0CDA
+P 5250 3700
+AR Path="/619D0CDA" Ref="#PWR?"  Part="1" 
+AR Path="/619C4170/619D0CDA" Ref="#PWR030"  Part="1" 
+F 0 "#PWR030" H 5250 3550 50  0001 C CNN
+F 1 "+3V3" H 5265 3873 50  0000 C CNN
+F 2 "" H 5250 3700 50  0001 C CNN
+F 3 "" H 5250 3700 50  0001 C CNN
+	1    5250 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3700 5250 3800
+Wire Wire Line
+	5250 3800 5150 3800
+Connection ~ 5250 3800
+Wire Wire Line
+	5250 3800 5250 3900
+$Comp
+L power:+5V #PWR?
+U 1 1 619D0CE4
+P 4100 3500
+AR Path="/619D0CE4" Ref="#PWR?"  Part="1" 
+AR Path="/619C4170/619D0CE4" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 4100 3350 50  0001 C CNN
+F 1 "+5V" H 4115 3673 50  0000 C CNN
+F 2 "" H 4100 3500 50  0001 C CNN
+F 3 "" H 4100 3500 50  0001 C CNN
+	1    4100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3500 4100 3550
+Wire Wire Line
+	4100 3800 4100 3900
+Wire Wire Line
+	4350 4200 4350 4300
+Wire Wire Line
+	4350 4300 4850 4300
+Wire Wire Line
+	4350 4300 4100 4300
+Wire Wire Line
+	4100 4300 4100 4200
+Connection ~ 4350 4300
+Wire Wire Line
+	4350 4000 4350 3800
+Wire Wire Line
+	4350 3800 4550 3800
+Wire Wire Line
+	4350 3800 4350 3550
+Wire Wire Line
+	4350 3550 4100 3550
+Connection ~ 4350 3800
+Connection ~ 4100 3550
+Wire Wire Line
+	4100 3550 4100 3600
+Wire Wire Line
+	4550 3900 4100 3900
+Connection ~ 4100 3900
+Wire Wire Line
+	4100 3900 4100 4000
+Text Notes 5350 4900 0    50   ~ 0
+LOW-DROPOUT REGULATORS
+$EndSCHEMATC
