@@ -1,0 +1,39 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model W25Q128JVFIM
+#/1163917/417436/2.49/16/3/Integrated Circuit
+DEF W25Q128JVFIM IC 0 30 Y Y 1 F N
+F0 "IC" 1450 300 50 H V L CNN
+F1 "W25Q128JVFIM" 1450 200 50 H V L CNN
+F2 "SOIC127P1032X264-16N" 1450 100 50 H I L CNN
+F3 "https://www.arrow.com/en/products/w25q128jvfim/winbond-electronics" 1450 0 50 H I L CNN
+F4 "NOR Flash" 1450 -100 50 H I L CNN "Description"
+F5 "2.64" 1450 -200 50 H I L CNN "Height"
+F6 "Winbond" 1450 -300 50 H I L CNN "Manufacturer_Name"
+F7 "W25Q128JVFIM" 1450 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "454-W25Q128JVFIM" 1450 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Winbond/W25Q128JVFIM?qs=qSfuJ%252Bfl%2Fd7PDG2Ic%2FV%252B7g%3D%3D" 1450 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "W25Q128JVFIM" 1450 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/w25q128jvfim/winbond-electronics" 1450 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ~HOLD(IO3) 1 0 0 200 R 50 50 0 0 P
+X VCC 2 0 -100 200 R 50 50 0 0 P
+X ~RESET 3 0 -200 200 R 50 50 0 0 P
+X NC_1 4 0 -300 200 R 50 50 0 0 P
+X NC_2 5 0 -400 200 R 50 50 0 0 P
+X NC_3 6 0 -500 200 R 50 50 0 0 P
+X ~CS 7 0 -600 200 R 50 50 0 0 P
+X DO(IO1) 8 0 -700 200 R 50 50 0 0 P
+X CLK 16 1600 0 200 L 50 50 0 0 P
+X DI(IO0) 15 1600 -100 200 L 50 50 0 0 P
+X NC_7 14 1600 -200 200 L 50 50 0 0 P
+X NC_6 13 1600 -300 200 L 50 50 0 0 P
+X NC_5 12 1600 -400 200 L 50 50 0 0 P
+X NC_4 11 1600 -500 200 L 50 50 0 0 P
+X GND 10 1600 -600 200 L 50 50 0 0 P
+X ~WP(IO2) 9 1600 -700 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1400 100 1400 -800 200 -800 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

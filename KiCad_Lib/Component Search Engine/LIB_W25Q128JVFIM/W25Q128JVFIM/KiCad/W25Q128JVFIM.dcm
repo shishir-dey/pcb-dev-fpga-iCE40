@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP W25Q128JVFIM
+D NOR Flash
+K
+F https://www.arrow.com/en/products/w25q128jvfim/winbond-electronics
+$ENDCMP
+#
+#End Doc Library

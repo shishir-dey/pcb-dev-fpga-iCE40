@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name W25Q128JVx)(type KiCad)(uri "C:/Users/Shishir Dey/OneDrive/Desktop/pcb-dev-fpga-iCE40/KiCad_Lib/Component Search Engine/LIB_W25Q128JVFIM/W25Q128JVFIM/KiCad")(options "")(descr ""))
+  (lib (name LY68L6400)(type KiCad)(uri "C:/Users/Shishir Dey/OneDrive/Desktop/pcb-dev-fpga-iCE40/KiCad_Lib/Component Search Engine/LIB_LY68L6400SLIT/LY68L6400SLIT/KiCad")(options "")(descr ""))
+  (lib (name "USB-C Receptacle")(type KiCad)(uri "C:/Users/Shishir Dey/OneDrive/Desktop/pcb-dev-fpga-iCE40/KiCad_Lib/Component Search Engine/LIB_632723300021/632723300021/KiCad")(options "")(descr ""))
+)
